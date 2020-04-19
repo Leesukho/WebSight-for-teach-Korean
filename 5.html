@@ -4,49 +4,27 @@
 <title>HTML - Lee 勉強</title>
 	<meta charset = "utf-8"><!--字の崩れを防止するために追加-->
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<style> 
-	body{
-		margin:0px;
-	}
-	h1{
-		font-size: 40px;
-		text-align:center;
-		border-bottom:1px solid gray;
-		margin:0;
-		padding:20px;
-	}
-	ol{
-		border-right:1px solid gray;
-		width:150px;
-		margin:0;
-		padding-left:20px;
-		padding-top:20px;
-	}
-	#active{
-		color:blue;
-	}/* ID선택자가 class선택자보다 우선순위가 더 높다 */
-	.saw{
-		color:gray;
-	}
-		a{
-			color:black;
-			text-decoration: none;
-		}
-	</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body> <!-- ここから本文を書くところ-->
-	<h1><a href="index.html">韓国語教室</a></h1>
-	<ol><!--oldered list-->
-		<li><a href="1.html"style="color:red;text-decoration:underline">韓国の文化</a></li>
-		<li><a href="2.html"class="saw" id="active">韓国語の読み方</a></li>
-		<li><a href="3.html"class="saw">基本的な人の呼び方</a></li>
-		<li><a href="4.html">挨拶</a></li>
-		<li><a href="5.html">旅行の時</a></li>
-	</ol>
-	<h2>旅行の時</h2>
+	<body> <!-- ここから本文を書くところ-->
 
-	<h3>道を聞くとき</h3>
+		<h1><a href="index.html">韓国語教室</a></h1>
+		<div id="Main_all">
+			<div id="Index_url">
+				<ol><!--oldered list-->
+					<li><a href="1.html">韓国の文化</a></li>
+					<li><a href="2.html">韓国語の読み方</a></li>
+					<li><a href="3.html">基本的な人の呼び方</a></li>
+					<li><a href="4.html">挨拶</a></li>
+					<li><a href="5.html">旅行の時</a></li>
+				</ol>
+			</div>
+			<div id="body_data">
+				<h2>旅行の時</h2>
 
-</body>
+				<h3>道を聞くとき</h3>
+			</div>
+		</div>
+	</body>
 </html>

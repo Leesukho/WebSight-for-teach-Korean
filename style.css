@@ -1,0 +1,50 @@
+
+body{
+	background-image: url("BackgroundImage.jpg");
+
+	margin:0px;
+}
+h1{
+	font-size: 40px;
+	text-align:center;
+	margin:0;
+	padding:20px;
+}
+#Main_all{
+
+	border:5px solid pink;
+	display:grid;
+	grid-template-columns:190px 1fr;
+
+
+}
+#Index_url ol{
+
+	width:170px;
+	margin:0;
+	padding-left:20px;
+	padding-top:20px;
+
+
+
+}
+#body_data{
+
+	border-left:1px solid gray ;
+  width:190px
+	margin-bottom:100px;
+	padding-left:20px;
+}
+@media(max-width:800px){
+	h1{
+		border-bottom:none;
+	}
+	#Main_all{
+		display:block;
+		border:none;
+	}
+	#Index_url ol{
+		border:none;
+		text-align:center;
+	}
+}
