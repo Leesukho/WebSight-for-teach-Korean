@@ -1,10 +1,14 @@
 
 body{
-	background-image: url("BackgroundImage.jpg");
-
+	background-image:url("BackgroundImage1.jpg");
+	background-repeat : no-repeat;
+	background-size : cover;
 	margin:0px;
 }
 h1{
+	background-image:url("TitleImage.jpg");
+	background-repeat : no-repeat;
+	background-size : cover;
 	font-size: 40px;
 	text-align:center;
 	margin:0;
@@ -18,18 +22,24 @@ h1{
 
 
 }
+#Index_url{
+	background-color:#f1f1f1;
+}
 #Index_url ol{
-
 	width:170px;
 	margin:0;
 	padding-left:20px;
 	padding-top:20px;
-
-
-
 }
+#Index_url li a{
+	color:#000; /*앞의 숫자배열 색 검정색*/
+	text-decoration:none;/*밑줄 제거*/
+}
+#Index_url li a:hover{
+	background-color:#555;
+} /*마우스가 버튼위에 올렸을때 반응*/
 #body_data{
-
+	background-color:#dfd2d2;
 	border-left:1px solid gray ;
   width:190px
 	margin-bottom:100px;
