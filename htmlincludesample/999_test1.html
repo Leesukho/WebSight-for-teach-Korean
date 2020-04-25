@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Insert title here</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script type="text/javascript">
+        $(document).ready(function(){
+         $("#header").load("999_test2.html")
+        /* id 지정을 통해서도 가능합니다.
+         $("#header").load("header.html #navbar")
+         */
+         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+      });
+
+</script>     -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $("#headers").load("999_test2.html"); // 원하는 파일 경로를 삽입하면 된다
+      $("#footers").load("999_test2.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+
+    });
+  </script>
+</head>
+
+<body>
+  <div id="header">
+    <h1>before</h1>
+  </div>
+  <div id="footers">
+    <h1>before</h1>
+  </div>
+</body>
+
+
+</html>

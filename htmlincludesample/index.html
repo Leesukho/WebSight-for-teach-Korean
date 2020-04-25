@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<title>Include Sample</title>
+
+	<!-- �Ʒ� �ΰ��� �ݵ��� �����Ѵ�. -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="includeHtml.js"></script>
+	<script type="text/javascript">
+		function headerCompleted() {
+			$("#sample").html("haha");
+		}
+
+		function footerCompleted() {
+			$("#sample2").html("hoho");
+		}
+	</script>
+</head>
+
+<body>
+	<!-- "include-html" �±��� "target" �Ӽ��� ��ġ��ų ������ �������ش�. -->
+	<include-html target="header.html" completed="headerCompleted"></include-html>
+	<div>Contents</div>
+	<include-html target="footer.html" completed="footerCompleted"></include-html>
+
+	<script>
+		includeHtml();
+	</script>
+</body>
+
+</html>
