@@ -9,6 +9,12 @@
 	<!--字の崩れを防止するために追加-->
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#Index_url").load("li_LeftTitle.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+		});
+	</script>
 </head>
 
 <body>
@@ -17,16 +23,6 @@
 	<h1><a href="index.html">韓国語教室</a></h1>
 	<div id="Main_all">
 		<div id="Index_url">
-			<ol>
-				<!--oldered list-->
-				<li><a href="1.html">韓国の文化</a></li>
-				<li><a href="2.html">韓国語の読み方</a></li>
-				<li><a href="3.html">基本的な人の呼び方</a></li>
-				<li><a href="4.html">挨拶</a></li>
-				<li><a href="5.html">旅行の時</a></li>
-				<li><a href="htmlincludesample/999_test1.html">Test</a></li>
-				
-			</ol>
 		</div>
 		<div id="body_data">
 			<h2>旅行の時</h2>
